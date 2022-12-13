@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="cb61756b-af61-44cd-bed3-1bb995f1aecf" name="Project eef" url="http://ntjfegt.lb.shared.prod.hostnet.nl">
+        <fileTransfer rootFolder="/httpdocs" host="ntjfegt.lb.shared.prod.hostnet.nl" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

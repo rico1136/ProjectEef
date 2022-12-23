@@ -1,0 +1,44 @@
+.project-menu
+{
+  width: 100vw;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 4em;
+}
+.project-menu li 
+{
+  font-size: 1.2em;
+  position: relative;
+}
+
+.project-menu li:hover
+{
+  cursor: pointer;
+  color: #595959;
+}
+
+.project-menu li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.project-menu li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.project-menu .active
+{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

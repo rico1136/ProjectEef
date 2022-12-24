@@ -37,8 +37,13 @@
   transform-origin: bottom left;
 }
 
-.project-menu .active
+.project-menu .active::after
 {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.projecten .hide
+{
+  display: none;
 }

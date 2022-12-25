@@ -9356,7 +9356,7 @@ a {
     -ms-transform: scale(1);
     transform: scale(1); }
     .testimonial-slide-center-wrap .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .testimonial-item-inner {
-      background: #000; }
+      background: rgba(0, 0, 0, 0); }
       .testimonial-slide-center-wrap .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .testimonial-item-inner strong {
         color: #fff; }
   @media (max-width: 767.98px) {

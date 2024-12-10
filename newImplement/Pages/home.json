@@ -1,0 +1,43 @@
+{
+    "heroSection": {
+      "backgroundImage": "images/Strandhuis/keuken 1.png",
+      "welcomeText": "Welkom bij",
+      "projectTitle": "project eef",
+      "introText": "project eef is een ontwerpstudio waarbij de focus ligt op het creëren van een omgeving die bij jouw wensen past."
+    },
+    "aboutSection": {
+      "title": "Dit is project eef",
+      "content": "Mijn naam is Evy, in 2020 heb ik vol enthousiasme project eef opgericht en ben ik begonnen aan een nieuw avontuur. Een ding wist ik hierbij zeker: ik ga met dezelfde enthousiasme helpen meedenken, ontwerp en ontwikkelen van uw ideeën, waarbij de ambitie ligt op het creëren van een omgeving die bij uw wensen past."
+    },
+    "projectsSection": {
+      "title": "Mijn projecten",
+      "description": "Met veel plezier heb ik al aan een aantal prachtige projecten mogen werken, die ik met veel trots heb afgerond."
+    },
+    "methodologySection": {
+      "title": "Werkwijze",
+      "content": "Een interieurontwerp kan gaan over een volledig project, het kan gaan over aparte ruimtes zoals een keuken of badkamer, maar ook met kantoren of werkruimtes wil ik u graag helpen. Een interieurontwerp bestaat uit verschillende fases, die ieder even belangrijk zijn. Het ontwerp kan worden verzorgd van ontwerp tot uitvoering."
+    },
+    "accordionSections": [
+      {
+        "title": "Fase 1: Inventarisatie",
+        "content": "We starten met een kenningsmakingsgesprek en een bezoek aan de locatie, tijdens deze ontmoeting worden de wensen van u op tafel gelegd en stel ik een aantal vragen om een beeld te krijgen van uw ideeën.",
+        "image": "images/img_7.jpg"
+      },
+      {
+        "title": "Fase 2: Concept ontwerp",
+        "content": "Naar aanleiding van het kennismakingsgesprek ga ik aan de slag met het concept ontwerp, hierbij worden kleuren, materialen en vormen samengebracht in een moodboard die een beeld geeft over de sfeer van het ontwerp. Daarnaast wordt er een concept uitgewerkt in 3D, die tijdens een tussentijds gesprek wordt besproken.",
+        "image": "images/img_2.jpg"
+      },
+      {
+        "title": "Fase 3: Definitief ontwerp",
+        "content": "Tijdens het definitieve ontwerp worden de puntjes op de i gezet. De aanpassingen worden hierbij doorgevoerd en er worden mooie beelden van het ontwerp gemaakt.",
+        "image": "images/img_3.jpg"
+      },
+      {
+        "title": "Fase 4: Realisatie",
+        "content": "Als laatst kan er nog gekozen worden voor de fase realisatie. Hierbij help ik u verder met het maken van maatvoeringstekeningen, verlichtingsplannen, vraag ik offertes aan en maak ik een materiaal- en productenlijst. Voert u de realisatie liever zelf uit, dan is deze optie geheel optioneel.",
+        "image": "images/img_4.jpg"
+      }
+    ]
+  }
+  

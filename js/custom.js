@@ -24,7 +24,7 @@
 					requestAnimationFrame(fade);
 				}
 			})();
-		};
+		}
 
 		setTimeout(function() {
 			fadeOut(loader);

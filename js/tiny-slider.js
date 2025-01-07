@@ -25,7 +25,7 @@ var tns = (function (){
           copy = obj[name];
 
           if (target === copy) {
-            continue;
+
           } else if (copy !== undefined) {
             target[name] = copy;
           }
@@ -617,7 +617,7 @@ var tns = function(options) {
         options[item] = el;
       } else {
         if (supportConsoleWarn) { console.warn('Can\'t find', options[item]); }
-        return;
+
       }
     }
   });

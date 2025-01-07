@@ -8,6 +8,9 @@
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath path="/wordpress/wp-content/plugins/copyright-date-block/node_modules" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>

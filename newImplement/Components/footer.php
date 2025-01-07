@@ -20,9 +20,9 @@
                         <div class="col-6 col-sm-6 col-md-4">
                             <div class="widget">
                                 <ul class="links list-unstyled">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="projects.html">Projecten</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="index">Home</a></li>
+                                    <li><a href="projects">Projecten</a></li>
+                                    <li><a href="contact">Contact</a></li>
                                 </ul>
                             </div>
                         </div>

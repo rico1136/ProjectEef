@@ -5,6 +5,21 @@
     margin-top: 2em;
     margin-bottom: 2em;
 }
+.container .heading{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight :700;
+    text-transform: uppercase;
+}
+.container .header p{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+.container .header .col-lg-5
+{
+    border-bottom: 0.1em solid #c5c5c5;
+    border-width: thin;
+}
 .container .content{
     display: flex;
     align-items: center;
@@ -36,7 +51,7 @@
 }
 .content .left-side .details i{
     font-size: 30px;
-    color: #3e2093;
+    color: #7a7a7a;
     margin-bottom: 10px;
 }
 .content .left-side .details .topic{
@@ -48,22 +63,34 @@
     font-size: 14px;
     color: #afafb6;
 }
+.container .content .middle{
+    width: 50%;
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
 .container .content .right-side{
-    width: 75%;
+    width: fit-content;
     margin-left: 75px;
 }
-.content .right-side .topic-text{
+.container .content .right-side img{
+    max-width: 100%;
+}
+.content .middle .topic-text{
     font-size: 23px;
     font-weight: 600;
-    color: #3e2093;
+    color: #7a7a7a;
+    text-align: center;
 }
-.right-side .input-box{
+.middle .input-box{
     height: 50px;
     width: 100%;
     margin: 12px 0;
 }
-.right-side .input-box input,
-.right-side .input-box textarea{
+.middle .input-box input,
+.middle .input-box textarea{
     height: 100%;
     width: 100%;
     border: none;
@@ -74,35 +101,44 @@
     padding: 0 15px;
     resize: none;
 }
-.right-side .message-box{
+.middle .message-box{
     min-height: 110px;
 }
-.right-side .input-box textarea{
+.middle .input-box textarea{
     padding-top: 6px;
 }
-.right-side .button{
-    display: inline-block;
+.middle .button{
+    align-self: center;
+    width: max-content;
     margin-top: 12px;
 }
-.right-side .button{
+.middle .button{
     color: #fff;
     font-size: 18px;
     outline: none;
     border: none;
     padding: 8px 16px;
     border-radius: 6px;
-    background: #3e2093;
+    background: #fc5404;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .button:hover{
-    background: #5029bc;
+    background: #c43e00;
 }
 
 @media (max-width: 950px) {
     .container{
         width: 90%;
         padding: 30px 40px 40px 35px ;
+    }
+    .container .content .middle{
+        width: 75%;
+        margin-left: 55px;
+    }
+    .container .content .middle .topic-text{
+        font-size: 1.5em;
+        margin-top: 1em;
     }
     .container .content .right-side{
         width: 75%;
@@ -113,6 +149,10 @@
     .container{
         margin: 40px 0;
         height: 100%;
+    }
+    .container .header .col-lg-5
+    {
+        border: none;
     }
     .container .content{
         flex-direction: column-reverse;
@@ -126,6 +166,10 @@
     }
     .container .content .left-side::before{
         display: none;
+    }
+    .container .content .middle{
+        width: 100%;
+        margin-left: 0;
     }
     .container .content .right-side{
         width: 100%;

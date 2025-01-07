@@ -18,7 +18,7 @@ $currentPage = str_replace($base_path, '', $currentPage);
 <nav class="site-nav">
     <div class="container">
         <div class="site-navigation">
-            <a href="index.html" class="logo m-0 float-start">project eef<span class="text-primary">.</span> </a>
+            <a href="index" class="logo m-0 float-start">project eef<span class="text-primary">.</span> </a>
             <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-start">
                 <li class="<?php echo ($currentPage == '') ? 'active' : ''; ?>"><a href="<?php echo $base_path ?>/">Home</a></li>
                 <li class="<?php echo (strpos($currentPage, '/projects') !== false) ? 'active' : ''; ?>"><a href="/projects">Projects</a></li>

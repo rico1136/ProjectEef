@@ -1,36 +1,38 @@
-<!-- /*
-* Template Name: Archiark
-* Template Author: Untree.co
-* Tempalte URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
-<!doctype html>
-<html lang="en">
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<meta name="author" content="Untree.co">
-	<link rel="shortcut icon" href="favicon.png">
+<?php
+$pageTitle = "Projects";
 
-	<meta name="description" content="" />
-	<meta name="keywords" content="bootstrap, bootstrap5" />
-	
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+include('Components/header.php');
 
-	<link rel="stylesheet" href="fonts/icomoon/style.css">
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<link rel="stylesheet" href="css/tiny-slider.css">
-	<link rel="stylesheet" href="css/aos.css">
-	<link rel="stylesheet" href="css/glightbox.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/customStyle.css">
+?>
+<link rel="stylesheet" href="css/customStyle.css">
 
-	<title>Project Eef &mdash; Projecten</title>
-</head>
-<body>
+<?php
+include('Components/navmenu.php');
+
+$json = file_get_contents('projects.json');
+
+// Check if the file was read successfully
+if ($json === false) {
+    error_log("Data is null", 0);
+
+    return;
+}
+
+// Decode the JSON file
+$json_data = json_decode($json, true);
+
+// Check if the JSON was decoded successfully
+if ($json_data === null) {
+    error_log("Data is null", 0);
+    return;
+}
+
+if (isset($json_data['projects'])) {
+    $projects = $json_data['projects'];
+}
+
+?>
+
 
 	<div class="site-mobile-menu site-navbar-target">
 		<div class="site-mobile-menu-header">
@@ -67,7 +69,7 @@
 		</div>
 	</nav>
 
-	<div class="hero-2 overlay" style="background-image: url('images//Vaneman/2.png');">
+	<div class="hero-2 overlay" style="background-image: url('images/Vaneman/2.jpg');">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-5 mx-auto ">
@@ -94,18 +96,22 @@
 			</div>
 
 			<div class="projecten row g-4">
-				<div class="Interieurontwerp col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <?php foreach ($projects as $project): ?>
+
+				<div class="<?php $project['type'] ?> Interieurontwerp col-xs-12 col-sm-6 col-md-6 col-lg-4">
 					<div class="single-portfolio">
-						<a href="Project-GoNow">
-							<img src="images/GoNow/3.png" alt="Image" class="img-fluid">
+						<a href="Project-<?php echo $project['id'] ?>">
+							<img src="<?php echo $project['images'][0] ?>" alt="Image" class="img-fluid">
 							<div class="contents">
-								<h3>Go Now</h3>
+								<h3><?php echo $project['name'] ?></h3>
 								<div class="cat"></div>
 							</div>
 						</a>
 					</div>
 				</div>
-				<div class="Interieurontwerp col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <?php endforeach; ?>
+<!--
+                <div class="Interieurontwerp col-xs-12 col-sm-6 col-md-6 col-lg-4">
 					<div class="single-portfolio">
 						<a href="Project-Renault">
 							<img src="images/Renault/RenaultNieuwendijk.png" alt="Image" class="img-fluid">
@@ -170,7 +176,7 @@
 							</div>
 						</a>
 					</div>
-				</div>
+				</div>-->
 				
 				
 				
@@ -182,65 +188,4 @@
 			</div>
 		</div>
 	</div>
-	<div class="site-footer bg-light">
-		<div class="container">
-
-			<div class="row justify-content-between">
-				<div class="col-lg-4">
-					<div class="widget">
-						<h3 class="line-top">Connect met mij</h3>
-						<ul class="social list-unstyled mb-5">
-							<!--<li><a href="#"><span class="icon-facebook"></span></a></li>
-							<li><a href="#"><span class="icon-twitter"></span></a></li>-->
-							<li><a href="https://www.instagram.com/projecteef/"><span class="icon-instagram"></span></a></li>
-							<!--<li><a href="#"><span class="icon-dribbble"></span></a></li>
-							<li><a href="#"><span class="icon-linkedin"></span></a></li>-->
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="row">
-						<div class="col-12">
-							<div class="widget">
-								<h3 class="line-top">Navigatie</h3>
-							</div>
-						</div>
-						<div class="col-6 col-sm-6 col-md-4">
-							<div class="widget">
-								<ul class="links list-unstyled">
-									<li><a href="home">Home</a></li>
-									<!--<li><a href="about">Over eef</a></li>
-									<li><a href="services">Werkwijze </a></li>-->
-									<li><a href="projects">Projecten</a></li>
-									<li><a href="contact">Contact</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	
-
-
-	<!-- Preloader -->
-	<div id="overlayer"></div>
-	<div class="loader">
-		<div class="spinner-border" role="status">
-			<span class="visually-hidden">Loading...</span>
-		</div>
-	</div>
-
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/tiny-slider.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/glightbox.min.js"></script>
-	<script src="js/navbar.js"></script>
-	<script src="js/counter.js"></script>
-	<script src="js/custom.js"></script>
-	<script src="js/customJS.js"></script>
-</body>
-</html>
+<?php include('Components/footer.php'); ?>

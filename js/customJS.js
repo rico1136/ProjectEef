@@ -1,6 +1,6 @@
 var projectenMenu = document.querySelectorAll('.project-menu li');
 var projectParent = document.querySelector('.projecten');
-var visualisatieProjecten = projectParent.querySelectorAll('.Visualisatie');
+//var visualisatieProjecten = projectParent.querySelectorAll('.Visualisatie');
 var InterieurontwerpProjecten = projectParent.querySelectorAll('.Interieurontwerp');
 
 

@@ -9736,6 +9736,62 @@ a {
       margin-top: 0px;
       opacity: 1;
       visibility: visible; }
+
+
+    /*Same but div*/
+.single-portfolio {
+  border-radius: 5px;
+  overflow: hidden;
+  color: #fff; }
+.single-portfolio > .portfolio-hover {
+  overflow: hidden;
+  position: relative;
+  display: block; }
+.single-portfolio > .portfolio-hover:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  height: 100%;
+  z-index: 2;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  background: rgba(0, 0, 0, 0.5); }
+.single-portfolio > .portfolio-hover .contents {
+  margin-top: 20px;
+  visibility: visible;
+  margin-top: 20px;
+  z-index: 3; }
+.single-portfolio > .portfolio-hover .contents h3, .single-portfolio > .portfolio-hover .contents .h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; }
+.single-portfolio > .portfolio-hover img {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+.single-portfolio > .portfolio-hover:hover:before {
+  visibility: visible;
+  opacity: 1; }
+.single-portfolio > .portfolio-hover:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05); }
+.single-portfolio > .portfolio-hover:hover .contents {
+  margin-top: 0px;
+  opacity: 1;
+  visibility: visible; }
+
+
   .single-portfolio .contents {
     position: absolute;
     top: 50%;
@@ -9772,7 +9828,7 @@ a {
 #testimonial-nav {
   position: absolute;
   z-index: 1;
-  top: -80px;
+  bottom: 50px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);

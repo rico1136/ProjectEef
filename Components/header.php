@@ -25,5 +25,6 @@
 
     <title>Project Eef &mdash; <?php echo isset($pageTitle) ? $pageTitle : ''; ?></title>
 </head>
+<body>
 
 

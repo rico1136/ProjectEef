@@ -1,0 +1,158 @@
+{
+  "projects": [
+    {
+      "id": "GoNow",
+      "name": "GoNow",
+      "type": "Interieurontwerp",
+      "images": [
+        "images/GoNow/1.jpg",
+        "images/GoNow/2.jpg",
+        "images/GoNow/3.jpg",
+        "images/GoNow/4.jpg",
+        "images/GoNow/5.jpg"
+      ],
+      "description": "Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque.",
+      "year": "2022 - 2023",
+      "client": "Go Now",
+      "startDate": "01 november 2022",
+      "endDate": "01 maart 2023"
+    },
+    {
+      "id": "Houseboat",
+      "name": "Houseboat",
+      "type": "Interieurontwerp",
+      "images": [
+        "images/Houseboat/1.jpg",
+        "images/Houseboat/2.jpg",
+        "images/Houseboat/3.jpg",
+        "images/Houseboat/4.jpg"
+      ],
+      "description": "Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque.",
+      "year": "2022",
+      "client": "Houseboat",
+      "startDate": "01 Feb 2022",
+      "endDate": "01 Mar 2022"
+    },
+    {
+      "id": "Renault",
+      "name": "Renault",
+      "type": "Interieurontwerp",
+      "images": [
+        "images/Renault/RenaultNieuwendijk.jpg"
+      ],
+      "description": "Vergaderruimte Renault Nieuwendijk",
+      "year": "2022",
+      "client": "Renault Nieuwendijk",
+      "startDate": "01 Jun 2022",
+      "endDate": "01 Sep 2022"
+    },
+    {
+      "id": "Starterwoning",
+      "name": "Starterwoning",
+      "type": "Interieurontwerp",
+      "images": [
+        "images/Starterwoning/Keuken.jpg",
+        "images/Starterwoning/Toilet.jpg",
+        "images/Starterwoning/slaapkamer1.jpg",
+        "images/Starterwoning/woonkamer1.jpg"
+      ],
+      "description": "Starterswoning",
+      "year": "2021 - 2022",
+      "client": "Starterswoning",
+      "startDate": "01 Nov 2021",
+      "endDate": "01 Mar 2022"
+    },
+    {
+      "id": "Strandhuis",
+      "name": "Strandhuis",
+      "type": "Interieurontwerp",
+      "images": [
+        "images/Strandhuis/0.jpg",
+        "images/Strandhuis/1.jpg",
+        "images/Strandhuis/2.jpg",
+        "images/Strandhuis/3.jpg",
+        "images/Strandhuis/4.jpg",
+        "images/Strandhuis/5.jpg",
+        "images/Strandhuis/6.jpg",
+        "images/Strandhuis/7.jpg",
+        "images/Strandhuis/8.jpg",
+        "images/Strandhuis/9.jpg",
+        "images/Strandhuis/10.jpg"
+      ],
+      "description": "Cadzand at See",
+      "year": "2021",
+      "client": "Cadzand at Sea",
+      "startDate": "01 Sep 2021",
+      "endDate": "01 Nov 2021"
+    },
+    {
+      "id": "Strandzomer",
+      "name": "Strandzomer",
+      "type": "Interieurontwerp",
+      "images": [
+        "images/StrandZomer/Strandzomer2.jpg",
+        "images/StrandZomer/Strandzomer1.jpg",
+        "images/StrandZomer/Strandzomer3.jpg"
+      ],
+      "description": "",
+      "year": 2020,
+      "client": "Strandzomer",
+      "startDate": "01 Feb 2020",
+      "endDate": "01 Jun 2020"
+    },
+    {
+      "id": "Vaneman",
+      "name": "Vaneman",
+      "type": "Interieurontwerp",
+      "images": [
+        "images/Vaneman/2.jpg",
+        "images/Vaneman/1.jpg",
+        "images/Vaneman/3.jpg",
+        "images/Vaneman/4.jpg",
+        "images/Vaneman/5.jpg",
+        "images/Vaneman/7.jpg",
+        "images/Vaneman/6.jpg"
+      ],
+      "description": "",
+      "year": 2021,
+      "client": "Customized by Vaneman",
+      "startDate": "01 Jun 2021",
+      "endDate": "01 Dec 2021"
+    },
+    {
+      "id": "WoningHaarlem",
+      "name": "Woning in Haarlem",
+      "type": "Interieurontwerp",
+      "images": [
+        "images/WoningHaarlem/keuken.jpg",
+        "images/WoningHaarlem/leeshoek.jpg",
+        "images/WoningHaarlem/slaapkamer.jpg",
+        "images/WoningHaarlem/woonkamer 1.jpg",
+        "images/WoningHaarlem/woonkamer 2.jpg"
+      ],
+      "description": "",
+      "year": 2023,
+      "client": "None",
+      "startDate": "01 Jun 2023",
+      "endDate": "01 Dec 2023"
+    },
+    {
+      "id": "SpaarneWoning",
+      "name": "Bovenwoning aan het spaarne",
+      "type": "Interieurontwerp",
+      "images": [
+        "images/SpaarneWoning/hal.jpg",
+        "images/SpaarneWoning/leeskamer.jpg",
+        "images/SpaarneWoning/slaapkamer.jpg",
+        "images/SpaarneWoning/woonkamer1.jpg",
+        "images/SpaarneWoning/woonkamer2.jpg",
+        "images/SpaarneWoning/woonkamer3.jpg"
+      ],
+      "description": "",
+      "year": 2023,
+      "client": "None",
+      "startDate": "01 Jun 2023",
+      "endDate": "01 Dec 2023"
+    }
+  ]
+}

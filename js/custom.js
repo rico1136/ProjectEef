@@ -104,9 +104,7 @@
 				controls: true,
 				autoplay: true,
 				autoplayButtonOutput: false,
-				controls: true,
 				gutter: 50,
-				slideBy: 1,
 				edgePadding: 0,
 				center: true,
 				controlsContainer: '#testimonial-nav',
@@ -128,13 +126,13 @@
 					},
 					700: {
 						gutter: 50,
-						edgePadding: 20,
-						items: 2,
+						edgePadding: 10,
+						items: 1,
 					},
 					1000: {
-						gutter: 50,
-						edgePadding: 50,
-						items: 2,
+						gutter: 10,
+						edgePadding: 10,
+						items: 1,
 					}
 				}
 
@@ -148,5 +146,7 @@
 	var lightboxVideo = GLightbox({
 		selector: '.glightbox'
 	});
+
+
 
 })()

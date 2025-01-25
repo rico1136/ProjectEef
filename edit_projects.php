@@ -129,10 +129,11 @@ if (isset($_GET['id'])) {
         <input type="text" id="client" name="client" value="<?= $selectedProject['client']; ?>">
 
         <label for="startDate">Start Date:</label>
-        <input type="text" id="startDate" name="startDate" value="<?= $selectedProject['startDate']; ?>">
+<input type="date" id="startDate" name="startDate" value="<?= date('Y-m-d', strtotime($selectedProject['startDate'])); ?>">
 
-        <label for="endDate">End Date:</label>
-        <input type="text" id="endDate" name="endDate" value="<?= $selectedProject['endDate']; ?>">
+<label for="endDate">End Date:</label>
+<input type="date" id="endDate" name="endDate" value="<?= date('Y-m-d', strtotime($selectedProject['endDate'])); ?>">
+
 
         <button type="submit" name="save">Save Changes</button>
     </form>

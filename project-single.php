@@ -2,6 +2,21 @@
 if (isset($projectData)) {
     $pageTitle = $projectData['name'];
     $images = $projectData['images'];
+
+    // Set the locale to Dutch
+setlocale(LC_TIME, 'nl_NL.UTF-8'); 
+
+// Parse the start and end dates
+$startDate = $projectData['startDate'];
+$endDate = $projectData['endDate'];
+
+// Convert them to DateTime objects
+$startDateTime = new DateTime($startDate);
+$endDateTime = new DateTime($endDate);
+
+// Format the dates in the desired Dutch format
+$startDateFormatted = strftime('%d %B %Y', $startDateTime->getTimestamp());
+$endDateFormatted = strftime('%d %B %Y', $endDateTime->getTimestamp());
 }
 include('Components/header.php');
 include('Components/navmenu.php');
@@ -59,10 +74,10 @@ include('Components/navmenu.php');
             <span class="text-black-50 d-block">Opdrachtgever:</span> <?php echo $projectData['client'] ?>
         </div>
         <div class="col-sm-3 border-left">
-            <span class="text-black-50 d-block">Begin:</span> <?php echo $projectData['startDate'] ?>
+            <span class="text-black-50 d-block">Begin:</span> <?php echo $startDateFormatted ?>
         </div>
         <div class="col-sm-3 border-left">
-            <span class="text-black-50 d-block">Eind:</span> <?php echo $projectData['endDate'] ?>
+            <span class="text-black-50 d-block">Eind:</span> <?php echo $endDateFormatted ?>
         </div>
     </div>
 </div>

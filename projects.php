@@ -29,6 +29,15 @@ if ($json_data === null) {
 
 if (isset($json_data['projects'])) {
     $projects = $json_data['projects'];
+
+    usort($projects, function ($a, $b) {
+        // Convert the endDate strings to timestamps for comparison
+        $endDateA = strtotime($a['endDate']);
+        $endDateB = strtotime($b['endDate']);
+
+        // Return the comparison result in descending order
+        return $endDateB - $endDateA;
+    });
 }
 
 ?>
@@ -99,7 +108,7 @@ if (isset($json_data['projects'])) {
                 <?php foreach ($projects as $project): ?>
 
 				<div class="<?php $project['type'] ?> Interieurontwerp col-xs-12 col-sm-6 col-md-6 col-lg-4">
-					<div class="single-portfolio">
+					<div class="single-portfolio border">
 						<a href="Project-<?php echo $project['id'] ?>">
 							<img src="<?php echo $project['images'][0] ?>" alt="Image" class="img-fluid">
 							<div class="contents">

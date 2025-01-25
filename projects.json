@@ -269,25 +269,6 @@
             "client": "Private Client",
             "startDate": "2025-06-01",
             "endDate": "2025-08-01"
-        },
-        {
-            "id": "Vamos",
-            "name": "Vamos",
-            "type": "Interieurontwerp",
-            "images": [
-                "images\/Vamos\/1.jpg",
-                "images\/Vamos\/2.jpg",
-                "images\/Vamos\/3.jpg",
-                "images\/Vamos\/4.jpg",
-                "images\/Vamos\/5.jpg",
-                "images\/Vamos\/6.jpg",
-                "images\/Vamos\/7.jpg"
-            ],
-            "description": "A vibrant and modern design project",
-            "year": "2025",
-            "client": "Private Client",
-            "startDate": "2025-03-01",
-            "endDate": "2025-05-01"
         }
     ]
 }
